@@ -1016,7 +1016,9 @@ Graphics._createPixiApp = function() {
         this._setupPixi();
         this._app = new PIXI.Application({
             view: this._canvas,
-            autoStart: false
+            autoStart: false,
+			resolution: 1,
+			forceCanvas: true
         });
         this._app.ticker.remove(this._app.render, this._app);
         this._app.ticker.add(this._onTick, this);

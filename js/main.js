@@ -34,9 +34,19 @@ class Main {
     showLoadingSpinner() {
         const loadingSpinner = document.createElement("div");
         const loadingSpinnerImage = document.createElement("div");
+		const loadingText = document.createElement('p')
+		loadingText.innerHTML = "加载中"
+		let loadingPoints = document.createElement('div')
+		loadingPoints.className = "la-ball-spin-clockwise"
+		for(let i = 1; i <= 8; i++){
+			let loadingPoint = document.createElement('div')
+			loadingPoints.append(loadingPoint)
+		}
         loadingSpinner.id = "loadingSpinner";
         loadingSpinnerImage.id = "loadingSpinnerImage";
-        loadingSpinner.appendChild(loadingSpinnerImage);
+		loadingSpinner.appendChild(loadingPoints)
+		loadingSpinner.appendChild(loadingText)
+        // loadingSpinner.appendChild(loadingSpinnerImage);
         document.body.appendChild(loadingSpinner);
     }
 

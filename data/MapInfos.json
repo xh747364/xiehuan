@@ -1,4 +1,6 @@
 [
 null,
-{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":411.55555555555554,"scrollY":320.8888888888889}
+{"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":411.55555555555554,"scrollY":320.8888888888889},
+{"id":2,"expanded":true,"name":"普通小镇","order":2,"parentId":1,"scrollX":832,"scrollY":908},
+{"id":3,"expanded":false,"name":"武器商店","order":3,"parentId":2,"scrollX":459,"scrollY":408}
 ]
