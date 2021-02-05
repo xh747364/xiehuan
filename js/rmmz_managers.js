@@ -5,7 +5,7 @@
 //-----------------------------------------------------------------------------
 // DataManager
 //
-// The static class that manages the database and game objects.
+// 管理数据库和游戏对象的静态类.
 
 function DataManager() {
     throw new Error("This is a static class");
@@ -2106,12 +2106,14 @@ SceneManager.updateScene = function() {
 
 SceneManager.isGameActive = function() {
     // [Note] We use "window.top" to support an iframe.
-    try {
-        return window.top.document.hasFocus();
-    } catch (e) {
-        // SecurityError
-        return true;
-    }
+    // try {
+    //     return window.top.document.hasFocus();
+    // } catch (e) {
+    //     // SecurityError
+    //     return true;
+    // }
+	
+	return true;
 };
 
 SceneManager.onSceneTerminate = function() {

@@ -5,7 +5,7 @@
 //-----------------------------------------------------------------------------
 // Scene_Base
 //
-// The superclass of all scenes within the game.
+// 游戏中所有场景的超类。
 
 function Scene_Base() {
     this.initialize(...arguments);
@@ -250,7 +250,7 @@ Scene_Base.prototype.onAutosaveFailure = function() {
 //-----------------------------------------------------------------------------
 // Scene_Boot
 //
-// The scene class for initializing the entire game.
+// 用于初始化整个游戏的场景类.
 
 function Scene_Boot() {
     this.initialize(...arguments);
@@ -379,7 +379,7 @@ Scene_Boot.prototype.checkPlayerLocation = function() {
 //-----------------------------------------------------------------------------
 // Scene_Title
 //
-// The scene class of the title screen.
+// 标题画面的场景类别.
 
 function Scene_Title() {
     this.initialize(...arguments);
@@ -518,7 +518,7 @@ Scene_Title.prototype.playTitleMusic = function() {
 //-----------------------------------------------------------------------------
 // Scene_Message
 //
-// The superclass of Scene_Map and Scene_Battle.
+// Scene_Map和Scene_Battle的超类.
 
 function Scene_Message() {
     this.initialize(...arguments);
@@ -634,7 +634,7 @@ Scene_Message.prototype.associateWindows = function() {
 //-----------------------------------------------------------------------------
 // Scene_Map
 //
-// The scene class of the map screen.
+// 地图画面的场景类别.
 
 function Scene_Map() {
     this.initialize(...arguments);
@@ -1066,7 +1066,7 @@ Scene_Map.prototype.encounterEffectSpeed = function() {
 //-----------------------------------------------------------------------------
 // Scene_MenuBase
 //
-// The superclass of all the menu-type scenes.
+// 所有菜单类型场景的超类.
 
 function Scene_MenuBase() {
     this.initialize(...arguments);
